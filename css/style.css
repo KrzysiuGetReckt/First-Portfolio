@@ -1,0 +1,158 @@
+html{
+    -webkit-text-size-adjust: auto;
+    text-size-adjust: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: 'Koulen', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+header{  /* @ media add smaller */
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.nav-menu{
+    font-size: 20px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+li.nav-menu{
+    display: block;
+    flex: 0 1 auto;
+    width: calc(100%/3);
+}
+ul.nav-menu > li.nav-menu { /* @ media maybe change to normal list? */
+    display: inline-block;
+}
+a{
+    opacity: 80%;
+    color: black;
+    text-decoration: underline transparent;
+    text-underline-offset: 1px;
+    transition: 300ms;
+}
+a:hover{
+    text-decoration: underline #f1dda3;
+}
+main{   /* @ media add smaller */
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    background-color: #F1EEE3;
+}
+h1{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+section > p {
+    font-size: 18px;
+}
+footer{
+    padding-left: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+footer > div > nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.li-padding-bottom{
+    padding-bottom: 1rem;
+}
+.offset-container{  /* @ media add smaller */
+    margin-left: 15rem;
+}
+.offset-container-inner{  /* @ media add smaller */
+    padding-right: 4rem;
+}
+.offset-nav{
+    padding-left: 70%;
+}
+@media (min-width: 320px) { 
+    .offset-container{ 
+        margin-left: 2.5rem;
+    }
+    .offset-nav{
+        padding-left: 10%;
+    }
+    .offset-container-inner{  /* @ media add smaller */
+        padding-right: 1.5rem;
+    }
+    ul.menu-font-size{
+        line-height: 4rem;
+    }
+ }
+
+@media (min-width: 576px) {
+    footer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    header{ 
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    } 
+    .offset-container{ 
+        margin-left: 2.5rem;
+    }
+    .offset-nav{
+        padding-left: 20%;
+    }
+    .offset-container-inner{  /* @ media add smaller */
+        padding-right: 1.5rem;
+    }
+    ul.menu-font-size{
+        line-height: 4rem;
+    }
+ }
+
+ @media (min-width: 768px) {
+    .offset-container{ 
+        margin-left: 5rem;
+    }
+    .offset-container-inner{  /* @ media add smaller */
+        padding-right: 2.5rem;
+    }
+    .offset-nav{
+        padding-left: 60%;
+    }
+    ul.menu-font-size{
+        line-height: 3.5rem;
+    }   
+ }
+
+@media (min-width: 992px) {
+    .offset-container{  
+        margin-left: 5rem;
+    }
+    .offset-nav{
+        padding-left: 60%;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .offset-container{ 
+        margin-left: 10rem;
+    }
+}
+
+@media (min-width: 1400px) { 
+    .offset-container{
+        margin-left: 15rem;
+    }
+}
